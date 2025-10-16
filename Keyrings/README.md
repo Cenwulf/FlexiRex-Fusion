@@ -1,0 +1,3 @@
+3d printable FlexiRex resized and modelled with additional geometry to allow three differnet attachment points for keyring or keychains.
+
+Parameter reference pending...
