@@ -48,6 +48,11 @@ As described above, offsets the axel to allow fine adjustmetn of the wall thickn
 - Min: n/a
 - Max: n/a
 
+|                                                                 Default: 0 mm                                                                  |                                                                      Max: n/a (0.5 mm shown)                                                                      |
+| :--------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|    ![Example of the thin walls between shackle segments without any axle offset applied](/assets/images/joint_axle_offset_0.0.png?raw=true)    |    ![Cutaway section veiw of the thin walls between shackle segments without any axle offset applied](/assets/images/joint_axle_offset_slice_0.0.png?raw=true)    |
+| ![Example of the thin walls between shackle segments with an axle offset of 0.5 mm applied](/assets/images/joint_axle_offset_0.5.png?raw=true) | ![Cutaway section veiw of the thin walls between shackle segments with an axle offset of 0.5 mm applied](/assets/images/joint_axle_offset_slice_0.5.png?raw=true) |
+
 <table>
 <tr>
 <td>
