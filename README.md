@@ -26,17 +26,17 @@ It's recommended to only change the favourited (blue stared) parameters, the ful
 
 Used to adjust the final scale of the model for printing. It's recommended, but not essential, to represent this as a fraction of the models default thickness (13 mm). For example, if you want the final model to be 7 mm thick, the scale factor would be 7/13.
 
-Default: 1 (13/13)
-Min: ~0.54 (7/13) with a 0.4 mm nozzle, and adjusted joint scaling and axel offset; ~0.31 (4/13) with a 0.2 mm nozzle, and adjusted joint scaling and axel offset
-Max: limited only by your imagination and the size of your print bed
+- Default: 1 (13/13)
+- Min: ~0.54 (7/13) with a 0.4 mm nozzle, and adjusted joint scaling and axel offset; ~0.31 (4/13) with a 0.2 mm nozzle, and adjusted joint scaling and axel offset
+- Max: limited only by your imagination and the size of your print bed
 
 ### joint_scale_factor
 
 Adjust the scale of the joints, this is useful for increasing the strength of the joints on heavily scalled down prints where the shackel thickness my drop below 2 extrusion widths.
 
-Default: 1
-Min: n/a
-Max: ~1.2 (recommended)
+- Default: 1
+- Min: n/a
+- Max: ~1.2 (recommended)
 
 Note: The scaling is centred on the joint axel centre so setting this value too high will cause the cutout for the shackel to break through and partially bisect some of the smaller segments of the model. The joint_axel_offset parameter can be used to mitigate this but even so, the maximum increase in joint scale is only ~20% (joint scale factor of 1.2)
 
@@ -44,27 +44,35 @@ Note: The scaling is centred on the joint axel centre so setting this value too 
 
 As described above, offsets the axel to allow fine adjustmetn of the wall thickness of the end of the shackel cutout. This offset is applied after the model has been scaled so that wall thickness at the thinest point can be measured and an increase in axel offset will directly translate to an equal increase in wall thickness. While this does mean that the offset will need to be adjusted every time the model scale is changed, it allows you to easily adjust the wall thickness between the shackel cutout and the oposite face of each model segment to maintain a desired thickness (usaully at least two extrusion widths to maintain printablility and structural integrity). It can also be used to shift the axel further towards the centre point between each segment, having the pivot point at the exact centre point between each segment maximises flexibility, but only very slightly.
 
-Default: 0 mm
-Min: n/a
-Max: n/a
+- Default: 0 mm
+- Min: n/a
+- Max: n/a
 
 <table>
 <tr>
 <td>
 <a href="assets\images\joint_axle_offset_0.0.png?raw=true" style="display:inline-block; background:#fff;">
-  <img src="assets\images\joint_axle_offset_0.0.png?raw=true" alt="Example of the thin walls between shackle segments without any axle offset applied" width="200" >
+  <img src="assets\images\joint_axle_offset_0.0.png?raw=true" alt="Example of the thin walls between shackle segments without any axle offset applied">
 </a>
 <a href="assets\images\joint_axle_offset_slice_0.0.png?raw=true" style="display:inline-block; background:#fff;">
-  <img src="assets\images\joint_axle_offset_slice_0.0.png?raw=true" alt="Cutaway section veiw of the thin walls between shackle segments without any axle offset applied" width="200" >
+  <img src="assets\images\joint_axle_offset_slice_0.0.png?raw=true" alt="Cutaway section veiw of the thin walls between shackle segments without any axle offset applied">
 </a>
 </td>
 <td>
 <a href="assets\images\joint_axle_offset_0.5.png?raw=true" style="display:inline-block; background:#fff;">
-  <img src="assets\images\joint_axle_offset_0.5.png?raw=true" alt="Example of the thin walls between shackle segments with an axle offset of 0.5 mm applied" width="200" >
+  <img src="assets\images\joint_axle_offset_0.5.png?raw=true" alt="Example of the thin walls between shackle segments with an axle offset of 0.5 mm applied">
 </a>
 <a href="assets\images\joint_axle_offset_slice_0.5.png?raw=true" style="display:inline-block; background:#fff;">
-  <img src="assets\images\joint_axle_offset_slice_0.5.png?raw=true" alt="Cutaway section veiw of the thin walls between shackle segments with an axle offset of 0.5 mm applied" width="200" >
+  <img src="assets\images\joint_axle_offset_slice_0.5.png?raw=true" alt="Cutaway section veiw of the thin walls between shackle segments with an axle offset of 0.5 mm applied">
 </a>
+</td>
+</tr>
+<tr>
+<td>
+Default: 0 mm
+</td>
+<td>
+Max: n/a (0.5 mm shown)
 </td>
 </tr>
 </table>
@@ -75,16 +83,14 @@ Note: It's not recommend to use negative value as this will shift the pivot poin
 
 Used to adjust the overall thickness of the model, the minimum is set such that leg and arm geometry doesn't break. Mainly cosmetic, but it's worth noting that after a point, increasing model thickness will dramatically reduce side-to-side flexibility.
 
-Default: 0 mm
-Min: -2.9 mm
-Max: n/a
+- Default: 0 mm
+- Min: -2.9 mm
+- Max: n/a
 
 ### head_thickness_offset
 
 Used to adjust the thickness of the top jaw while maintining the eye and eyebrow position relative to the top of the head. Min is clamped to prevent the eye and shackel cutout from intersecting. Purely cosmetic and a bit of fun.
 
-Default: 0 mm
-Min: -6 mm
-Max: n/a
-
-note: ?raw=true
+- Default: 0 mm
+- Min: -6 mm
+- Max: n/a
