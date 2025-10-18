@@ -18,7 +18,7 @@ The free for persaonal use version of Autodesk Fusion can be downloaded [here](h
 
 Access the parameters dialoge by clicking _MODIFTY_ > _Change Parameter_
 
-[![Fusion's Change Parameter dialoge](/assets/images/parameters.png)](/assets/images/parameters.png)
+![Fusion's Change Parameter dialoge](/assets/images/parameters.png?raw=true)
 
 It's recommended to only change the favourited (blue stared) parameters, the full list can be found below in order of importance.
 
