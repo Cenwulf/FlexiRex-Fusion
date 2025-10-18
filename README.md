@@ -40,13 +40,34 @@ Max: ~1.2 (recommended)
 
 Note: The scaling is centred on the joint axel centre so setting this value too high will cause the cutout for the shackel to break through and partially bisect some of the smaller segments of the model. The joint_axel_offset parameter can be used to mitigate this but even so, the maximum increase in joint scale is only ~20% (joint scale factor of 1.2)
 
-### joint_axel_offset
+### joint_axle_offset
 
 As described above, offsets the axel to allow fine adjustmetn of the wall thickness of the end of the shackel cutout. This offset is applied after the model has been scaled so that wall thickness at the thinest point can be measured and an increase in axel offset will directly translate to an equal increase in wall thickness. While this does mean that the offset will need to be adjusted every time the model scale is changed, it allows you to easily adjust the wall thickness between the shackel cutout and the oposite face of each model segment to maintain a desired thickness (usaully at least two extrusion widths to maintain printablility and structural integrity). It can also be used to shift the axel further towards the centre point between each segment, having the pivot point at the exact centre point between each segment maximises flexibility, but only very slightly.
 
 Default: 0 mm
 Min: n/a
 Max: n/a
+
+<table>
+<tr>
+<td>
+<a href="assets\images\joint_axle_offset_0.0.png?raw=true" style="display:inline-block; background:#fff;">
+  <img src="assets\images\joint_axle_offset_0.0.png?raw=true" alt="Example of the thin walls between shackle segments without any axle offset applied" width="200" >
+</a>
+<a href="assets\images\joint_axle_offset_slice_0.0.png?raw=true" style="display:inline-block; background:#fff;">
+  <img src="assets\images\joint_axle_offset_slice_0.0.png?raw=true" alt="Cutaway section veiw of the thin walls between shackle segments without any axle offset applied" width="200" >
+</a>
+</td>
+<td>
+<a href="assets\images\joint_axle_offset_0.5.png?raw=true" style="display:inline-block; background:#fff;">
+  <img src="assets\images\joint_axle_offset_0.5.png?raw=true" alt="Example of the thin walls between shackle segments with an axle offset of 0.5 mm applied" width="200" >
+</a>
+<a href="assets\images\joint_axle_offset_slice_0.5.png?raw=true" style="display:inline-block; background:#fff;">
+  <img src="assets\images\joint_axle_offset_slice_0.5.png?raw=true" alt="Cutaway section veiw of the thin walls between shackle segments with an axle offset of 0.5 mm applied" width="200" >
+</a>
+</td>
+</tr>
+</table>
 
 Note: It's not recommend to use negative value as this will shift the pivot point further away from the centre and reduce flexibility. In practice the maximum value will depend entirely on the scale of the model, too high a value will cause the axel to eat into and create gaps in the next segment in the chain, though this is preferable to the shackel cutout bisect the previous segment entirely.
 
