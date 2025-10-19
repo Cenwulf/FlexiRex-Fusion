@@ -18,7 +18,7 @@ Please read the licensing and attribution FAQ on DrLex0's original repository [h
 
 The free for personal use version of Autodesk Fusion can be downloaded [here](https://www.autodesk.com/products/fusion-360/personal), opening the [FlexiRex-Fusion.f3d](FlexiRex-Fusion.f3d) file or either of the other variants will allow you to customise the model to your needs by adjusting the built in parameters.
 
-Access the parameters dialog by clicking _MODIFY_ > _Change Parameter_
+Access the parameters dialog by clicking _MODIFY_ > _Change Parameters_
 
 ![Fusion's Change Parameter dialog](/assets/images/parameters.png?raw=true)
 
