@@ -27,7 +27,7 @@ It's recommended to only change the favourited (blue stared) parameters, the ful
 Used to adjust the final scale of the model for printing. It's recommended, but not essential, to represent this as a fraction of the models default thickness (13 mm). For example, if you want the final model to be 7 mm thick, the scale factor would be 7/13.
 
 - Default: 1 (13/13)
-- Min: ~0.54 (7/13) with a 0.4 mm nozzle, and adjusted joint scaling and axel offset; ~0.31 (4/13) with a 0.2 mm nozzle, and adjusted joint scaling and axel offset
+- Min: ~0.54 (7/13) with a 0.4 mm nozzle, and adjusted joint scaling and axle offset; ~0.31 (4/13) with a 0.2 mm nozzle, and adjusted joint scaling and axle offset
 - Max: limited only by your imagination and the size of your print bed
 
 ### joint_scale_factor
