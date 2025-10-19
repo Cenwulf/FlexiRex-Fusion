@@ -14,6 +14,8 @@ Please read the licensing and attribution FAQ on DrLex0's original repository [h
 
 ## Fusion Parameter Reference
 
+### Getting Started
+
 The free for personal use version of Autodesk Fusion can be downloaded [here](https://www.autodesk.com/products/fusion-360/personal), opening the [FlexiRex-Fusion.f3d](FlexiRex-Fusion.f3d) file or either of the other variants will allow you to customise the model to your needs by adjusting the built in parameters.
 
 Access the parameters dialog by clicking _MODIFY_ > _Change Parameter_
@@ -22,7 +24,9 @@ Access the parameters dialog by clicking _MODIFY_ > _Change Parameter_
 
 It's recommended to only change the favorite (blue stared) parameters, the full list can be found below in order of importance.
 
-### scale_factor
+### Parameter
+
+##### scale_factor
 
 Used to adjust the final scale of the model for printing. It's recommended, but not essential, to represent this as a fraction of the models default thickness (13 mm). For example, if you want the final model to be 7 mm thick, the scale factor would be 7/13.
 
@@ -30,7 +34,7 @@ Used to adjust the final scale of the model for printing. It's recommended, but 
 - Min: ~0.54 (7/13) with a 0.4 mm nozzle, and adjusted joint scaling and axle offset; ~0.31 (4/13) with a 0.2 mm nozzle, and adjusted joint scaling and axle offset
 - Max: limited only by your imagination and the size of your print bed
 
-### joint_scale_factor
+##### joint_scale_factor
 
 Adjust the scale of the joints, this is useful for increasing the strength of the joints on heavily scaled down prints where the shackle thickness may drop below 2 extrusion widths.
 
@@ -40,7 +44,7 @@ Adjust the scale of the joints, this is useful for increasing the strength of th
 
 Note: The scaling is centred on the joint axel centre so setting this value too high will cause the cutout for the shackle to break through and partially bisect some of the smaller segments of the model. The joint_axel_offset parameter can be used to mitigate this but even so, the maximum increase in joint scale is only ~20% (joint scale factor of 1.2)
 
-### joint_axle_offset
+##### joint_axle_offset
 
 As described above, offsets the axel to allow fine adjustment of the wall thickness of the end of the shackle cutout. This offset is applied after the model has been scaled so that wall thickness at the thinnest point can be measured and an increase in axel offset will directly translate to an equal increase in wall thickness. While this does mean that the offset will need to be adjusted every time the model scale is changed, it allows you to easily adjust the wall thickness between the shackle cutout and the opposite face of each model segment to maintain a desired thickness (usually at least two extrusion widths to maintain printability and structural integrity). It can also be used to shift the axel further towards the centre point between each segment, having the pivot point at the exact centre point between each segment maximises flexibility, but only very slightly.
 
@@ -50,7 +54,7 @@ As described above, offsets the axel to allow fine adjustment of the wall thickn
 
 Note: It's not recommend to use negative value as this will shift the pivot point further away from the centre and reduce flexibility. In practice the maximum value will depend entirely on the scale of the model, too high a value will cause the axel to eat into and create gaps in the next segment in the chain, though this is preferable to the shackle cutout bisect the previous segment entirely.
 
-### thickness_offset
+##### thickness_offset
 
 Used to adjust the overall thickness of the model, the minimum is set such that leg and arm geometry doesn't break. Mainly cosmetic, but it's worth noting that after a point, increasing model thickness will dramatically reduce side-to-side flexibility.
 
@@ -58,7 +62,7 @@ Used to adjust the overall thickness of the model, the minimum is set such that 
 | :--------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
 | ![Model with -2.9 mm thickness offset](/assets/images/thickness_offset_min.png?raw=true) | ![Model with 0 mm thickness offset](/assets/images/thickness_offset_default.png?raw=true) | ![Model with 7 mm thickness offset](/assets/images/thickness_offset_max.png?raw=true) |
 
-### head_thickness_offset
+##### head_thickness_offset
 
 Used to adjust the thickness of the top jaw while maintaining the eye and eyebrow position relative to the top of the head. Min is clamped to prevent the eye and shackle cutout from intersecting. Purely cosmetic and a bit of fun.
 
@@ -66,10 +70,10 @@ Used to adjust the thickness of the top jaw while maintaining the eye and eyebro
 | :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
 | ![Model with -6 mm head thickness offset](/assets/images/head_thickness_offset_min.png?raw=true) | ![Model with 0 mm head thickness offset](/assets/images/head_thickness_offset_default.png?raw=true) | ![Model with 5 mm head thickness offset](/assets/images/head_thickness_offset_5mm.png?raw=true) |
 
-### layer_height
+##### layer_height
 
 The layer height you are intending to print the model. Used to maintain vertical spacing and shell thickness of some features and to calculate maximum overhang angle.
 
-### extrusion_width
+##### extrusion_width
 
 The extrusion width (line width in most slicers) that will be used when printing the model, important to modify this to match whatever nozzle will be used. Used to maintain horizontal spacing and shell thickness of some features and to calculate maximum overhang angle.
