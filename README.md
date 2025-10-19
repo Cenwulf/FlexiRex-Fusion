@@ -24,7 +24,7 @@ Access the parameters dialog by clicking _MODIFY_ > _Change Parameter_
 
 It's recommended to only change the favorite (blue stared) parameters, the full list can be found below in order of importance.
 
-### Parameter
+### Parameters
 
 #### scale_factor
 
