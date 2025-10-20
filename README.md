@@ -38,22 +38,9 @@ Used to adjust the final scale of the model for printing. It's recommended, but 
 
 Adjust the scale of the joints, this is useful for increasing the strength of the joints on heavily scaled down prints where the shackle thickness may drop below 2 extrusion widths.
 
-<table>
-<thead>
-<tr>
-<th align="center" style="width: 33.3333%">Min: n/a (0.8 shown)</th>
-<th align="center" style="width: 33.3333%">Default: 1</th>
-<th align="center" style="width: 33.3333%">Max: ~1.2 (reccomended)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><a target="_blank" rel="noopener noreferrer" href="/assets/images/joint_scale_factor_0.8.png?raw=true"><img src="/assets/images/joint_scale_factor_0.8.png?raw=true" alt="Joints scaled by a factor of 0.8" style="max-width: 100%;"></a></td>
-<td align="center"><a target="_blank" rel="noopener noreferrer" href="/assets/images/joint_scale_factor_1.0.png?raw=true"><img src="/assets/images/joint_scale_factor_1.0.png?raw=true" alt="Joints scaled by a factor of 1.0" style="max-width: 100%;"></a></td>
-<td align="center"><a target="_blank" rel="noopener noreferrer" href="/assets/images/joint_scale_factor_1.2.png?raw=true"><img src="/assets/images/joint_scale_factor_1.2.png?raw=true" alt="Joints scaled by a factor of 1.2" style="max-width: 100%;"></a></td>
-</tr>
-</tbody>
-</table>
+|                                  Min: n/a (0.8 shown)                                   |                                       Default: 1                                        |                                 Max: ~1.2 (recommended)                                 |
+| :-------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: |
+| ![Joints scaled by a factor of 0.8](/assets/images/joint_scale_factor_0.8.png?raw=true) | ![Joints scaled by a factor of 1.0](/assets/images/joint_scale_factor_1.0.png?raw=true) | ![Joints scaled by a factor of 1.2](/assets/images/joint_scale_factor_1.0.png?raw=true) |
 
 Note: The scaling is centred on the joint axle centre so setting this value too high will cause the cut-out for the shackle to break through and partially bisect some of the smaller segments of the model. The joint_axle_offset parameter can be used to mitigate this but even so, the maximum increase in joint scale is only ~20% (joint scale factor of 1.2)
 
@@ -61,20 +48,9 @@ Note: The scaling is centred on the joint axle centre so setting this value too 
 
 As described above, offsets the axle to allow fine adjustment of the wall thickness of the end of the shackle cut-out. This offset is applied after the model has been scaled so that wall thickness at the thinnest point can be measured and an increase in axle offset will directly translate to an equal increase in wall thickness. While this does mean that the offset will need to be adjusted every time the model scale is changed, it allows you to easily adjust the wall thickness between the shackle cut-out and the opposite face of each model segment to maintain a desired thickness (usually at least two extrusion widths to maintain printability and structural integrity). It can also be used to shift the axle further towards the centre point between each segment, having the pivot point at the exact centre point between each segment maximises flexibility, but only very slightly.
 
-<table>
-<thead>
-<tr>
-<th align="center" style="width: 50%">Default: 0 mm</th>
-<th align="center" style="width: 50%">Max: n/a (0.5 mm shown)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><a target="_blank" rel="noopener noreferrer" href="/assets/images/joint_axle_offset_0.0_combined.png?raw=true"><img src="/assets/images/joint_axle_offset_0.0_combined.png?raw=true" alt="Model with 0 mm applied" style="max-width: 100%;"></a></td>
-<td align="center"><a target="_blank" rel="noopener noreferrer" href="/assets/images/joint_axle_offset_0.5_combined.png?raw=true"><img src="/assets/images/joint_axle_offset_0.5_combined.png?raw=true" alt="Model with 0.5 mm applied" style="max-width: 100%;"></a></td>
-</tr>
-</tbody>
-</table>
+|                                      Default: 0 mm                                       |                                 Max: n/a (0.5 mm shown)                                  |
+| :--------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------: |
+| ![Model with no axle offset](/assets/images/joint_axle_offset_0.0_combined.png?raw=true) | ![Model with 0.5 mm applied](/assets/images/joint_axle_offset_0.5_combined.png?raw=true) |
 
 Note: It's not recommend to use negative value as this will shift the pivot point further away from the centre and reduce flexibility. In practice the maximum value will depend entirely on the scale of the model, too high a value will cause the axle to eat into and create gaps in the next segment in the chain, though this is preferable to the shackle cut-out bisect the previous segment entirely.
 
@@ -82,43 +58,17 @@ Note: It's not recommend to use negative value as this will shift the pivot poin
 
 Used to adjust the overall thickness of the model, the minimum is set such that leg and arm geometry doesn't break. Mainly cosmetic, but it's worth noting that after a point, increasing model thickness will dramatically reduce side-to-side flexibility.
 
-<table>
-<thead>
-<tr>
-<th align="center" style="width: 33.3333%">Min: -2.9 mm</th>
-<th align="center" style="width: 33.3333%">Default: 0 mm</th>
-<th align="center" style="width: 33.3333%">Max: n/a (7 mm shown)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><a target="_blank" rel="noopener noreferrer" href="/assets/images/thickness_offset_min.png?raw=true"><img src="/assets/images/thickness_offset_min.png?raw=true" alt="Model with -2.9 mm thickness offset" style="max-width: 100%;"></a></td>
-<td align="center"><a target="_blank" rel="noopener noreferrer" href="/assets/images/thickness_offset_default.png?raw=true)"><img src="/assets/images/thickness_offset_default.png?raw=true)" alt="Model with 0 mm thickness offset" style="max-width: 100%;"></a></td>
-<td align="center"><a target="_blank" rel="noopener noreferrer" href="/assets/images/thickness_offset_max.png?raw=true"><img src="/assets/images/thickness_offset_max.png?raw=true" alt="Model with 7 mm thickness offset" style="max-width: 100%;"></a></td>
-</tr>
-</tbody>
-</table>
+|                                       Min: -2.9 mm                                       |                                       Default: 0 mm                                       |                                 Max: n/a (7 mm shown)                                 |
+| :--------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
+| ![Model with -2.9 mm thickness offset](/assets/images/thickness_offset_min.png?raw=true) | ![Model with 0 mm thickness offset](/assets/images/thickness_offset_default.png?raw=true) | ![Model with 7 mm thickness offset](/assets/images/thickness_offset_max.png?raw=true) |
 
 #### head_thickness_offset
 
 Used to adjust the thickness of the top jaw while maintaining the eye and eyebrow position relative to the top of the head. Min is clamped to prevent the eye and shackle cut-out from intersecting. Purely cosmetic and a bit of fun.
 
-<table>
-<thead>
-<tr>
-<th align="center" style="width: 33.3333%">Min: -6 mm</th>
-<th align="center" style="width: 33.3333%">Default: 0 mm</th>
-<th align="center" style="width: 33.3333%">Max: n/a (5 mm shown)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><a target="_blank" rel="noopener noreferrer" href="/assets/images/head_thickness_offset_min.png?raw=true"><img src="/assets/images/head_thickness_offset_min.png?raw=true" alt="Model with -6 mm head thickness offset" style="max-width: 100%;"></a></td>
-<td align="center"><a target="_blank" rel="noopener noreferrer" href="/assets/images/head_thickness_offset_default.png?raw=true"><img src="/assets/images/head_thickness_offset_default.png?raw=true" alt="Model with 0 mm head thickness offset" style="max-width: 100%;"></a></td>
-<td align="center"><a target="_blank" rel="noopener noreferrer" href="/assets/images/head_thickness_offset_5mm.png?raw=true"><img src="/assets/images/head_thickness_offset_5mm.png?raw=true" alt="Model with 5 mm head thickness offset" style="max-width: 100%;"></a></td>
-</tr>
-</tbody>
-</table>
+|                                            Min: -6 mm                                            |                                            Default: 0 mm                                            |                                      Max: n/a (5 mm shown)                                      |
+| :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
+| ![Model with -6 mm head thickness offset](/assets/images/head_thickness_offset_min.png?raw=true) | ![Model with 0 mm head thickness offset](/assets/images/head_thickness_offset_default.png?raw=true) | ![Model with 5 mm head thickness offset](/assets/images/head_thickness_offset_5mm.png?raw=true) |
 
 #### layer_height
 
