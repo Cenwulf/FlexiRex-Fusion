@@ -38,7 +38,7 @@ Used to adjust the final scale of the model for printing. It's recommended, but 
 
 Adjust the scale of the joints, this is useful for increasing the strength of the joints on heavily scaled down prints where the shackle thickness may drop below 2 extrusion widths.
 
-| <div style="display: inline-block;">Min: n/a (0.8 shown)</dvi> |     <div style="display: inline-block;">Default: 1</div>     | <div style="display: inline-block;">Max: ~1.2 (recommended)</div> |
+|                     Min: n/a (0.8 shown)                     |                          Default: 1                          |                   Max: ~1.2 (recommended)                    |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | ![Joints scaled by a factor of 0.8](/assets/images/joint_scale_factor_0.8.png?raw=true) | ![Joints scaled by a factor of 1.0](/assets/images/joint_scale_factor_1.0.png?raw=true) | ![Joints scaled by a factor of 1.2](/assets/images/joint_scale_factor_1.0.png?raw=true) |
 
@@ -48,7 +48,7 @@ Note: The scaling is centred on the joint axle centre so setting this value too 
 
 As described above, offsets the axle to allow fine adjustment of the wall thickness of the end of the shackle cut-out. This offset is applied after the model has been scaled so that wall thickness at the thinnest point can be measured and an increase in axle offset will directly translate to an equal increase in wall thickness. While this does mean that the offset will need to be adjusted every time the model scale is changed, it allows you to easily adjust the wall thickness between the shackle cut-out and the opposite face of each model segment to maintain a desired thickness (usually at least two extrusion widths to maintain printability and structural integrity). It can also be used to shift the axle further towards the centre point between each segment, having the pivot point at the exact centre point between each segment maximises flexibility, but only very slightly.
 
-|   <div style="display: inline-block;">Default: 0 mm</dvi>    | <div style="display: inline-block;">Max: n/a (0.5 mm shown)</dvi> |
+|                        Default: 0 mm                         |                   Max: n/a (0.5 mm shown)                    |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | ![Model with no axle offset](/assets/images/joint_axle_offset_0.0_combined.png?raw=true) | ![Model with 0.5 mm applied](/assets/images/joint_axle_offset_0.5_combined.png?raw=true) |
 
@@ -58,7 +58,7 @@ Note: It's not recommend to use negative value as this will shift the pivot poin
 
 Used to adjust the overall thickness of the model, the minimum is set such that leg and arm geometry doesn't break. Mainly cosmetic, but it's worth noting that after a point, increasing model thickness will dramatically reduce side-to-side flexibility.
 
-|    <div style="display: inline-block;">Min: -2.9 mm</dvi>    |   <div style="display: inline-block;">Default: 0 mm</dvi>    | <div style="display: inline-block;">Max: n/a (7 mm shown)</dvi> |
+|                         Min: -2.9 mm                         |                        Default: 0 mm                         |                    Max: n/a (7 mm shown)                     |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | ![Model with -2.9 mm thickness offset](/assets/images/thickness_offset_min.png?raw=true) | ![Model with 0 mm thickness offset](/assets/images/thickness_offset_default.png?raw=true) | ![Model with 7 mm thickness offset](/assets/images/thickness_offset_max.png?raw=true) |
 
@@ -66,7 +66,7 @@ Used to adjust the overall thickness of the model, the minimum is set such that 
 
 Used to adjust the thickness of the top jaw while maintaining the eye and eyebrow position relative to the top of the head. Min is clamped to prevent the eye and shackle cut-out from intersecting. Purely cosmetic and a bit of fun.
 
-|     <div style="display: inline-block;">Min: -6 mm</dvi>     |   <div style="display: inline-block;">Default: 0 mm</dvi>    | <div style="display: inline-block;">Max: n/a (5 mm shown)</dvi> |
+|                          Min: -6 mm                          |                        Default: 0 mm                         |                    Max: n/a (5 mm shown)                     |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | ![Model with -6 mm head thickness offset](/assets/images/head_thickness_offset_min.png?raw=true) | ![Model with 0 mm head thickness offset](/assets/images/head_thickness_offset_default.png?raw=true) | ![Model with 5 mm head thickness offset](/assets/images/head_thickness_offset_5mm.png?raw=true) |
 
