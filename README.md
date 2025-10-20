@@ -48,9 +48,9 @@ Adjust the scale of the joints, this is useful for increasing the strength of th
 </thead>
 <tbody>
 <tr>
-<td align="center">![Joints scaled by a factor of 0.8](/assets/images/joint_scale_factor_0.8.png?raw=true)</td>
-<td align="center">![Joints scaled by a factor of 1.0](/assets/images/joint_scale_factor_1.0.png?raw=true)</td>
-<td align="center">![Joints scaled by a factor of 1.2](/assets/images/joint_scale_factor_1.2.png?raw=true)</td>
+<td align="center"><a target="_blank" rel="noopener noreferrer" href="/assets/images/joint_scale_factor_0.8.png?raw=true"><img src="/assets/images/joint_scale_factor_0.8.png?raw=true" alt="Joints scaled by a factor of 0.8" style="max-width: 100%;"></a></td>
+<td align="center"><a target="_blank" rel="noopener noreferrer" href="/assets/images/joint_scale_factor_1.0.png?raw=true"><img src="/assets/images/joint_scale_factor_1.0.png?raw=true" alt="Joints scaled by a factor of 1.0" style="max-width: 100%;"></a></td>
+<td align="center"><a target="_blank" rel="noopener noreferrer" href="/assets/images/joint_scale_factor_1.2.png?raw=true"><img src="/assets/images/joint_scale_factor_1.2.png?raw=true" alt="Joints scaled by a factor of 1.2" style="max-width: 100%;"></a></td>
 </tr>
 </tbody>
 </table>
@@ -70,8 +70,8 @@ As described above, offsets the axle to allow fine adjustment of the wall thickn
 </thead>
 <tbody>
 <tr>
-<td align="center">![Model with no axle offset](/assets/images/joint_axle_offset_0.0_combined.png?raw=true)</td>
-<td align="center">![Model with 0.5 mm applied](/assets/images/joint_axle_offset_0.5_combined.png?raw=true)</td>
+<td align="center"><a target="_blank" rel="noopener noreferrer" href="/assets/images/joint_axle_offset_0.0_combined.png?raw=true"><img src="/assets/images/joint_axle_offset_0.0_combined.png?raw=true" alt="Model with 0 mm applied" style="max-width: 100%;"></a></td>
+<td align="center"><a target="_blank" rel="noopener noreferrer" href="/assets/images/joint_axle_offset_0.5_combined.png?raw=true"><img src="/assets/images/joint_axle_offset_0.5_combined.png?raw=true" alt="Model with 0.5 mm applied" style="max-width: 100%;"></a></td>
 </tr>
 </tbody>
 </table>
@@ -92,9 +92,9 @@ Used to adjust the overall thickness of the model, the minimum is set such that 
 </thead>
 <tbody>
 <tr>
-<td align="center">![Model with -2.9 mm thickness offset](/assets/images/thickness_offset_min.png?raw=true)</td>
-<td align="center">![Model with 0 mm thickness offset](/assets/images/thickness_offset_default.png?raw=true)</td>
-<td align="center">![Model with 7 mm thickness offset](/assets/images/thickness_offset_max.png?raw=true)</td>
+<td align="center"><a target="_blank" rel="noopener noreferrer" href="/assets/images/thickness_offset_min.png?raw=true"><img src="/assets/images/thickness_offset_min.png?raw=true" alt="Model with -2.9 mm thickness offset" style="max-width: 100%;"></a></td>
+<td align="center"><a target="_blank" rel="noopener noreferrer" href="/assets/images/thickness_offset_default.png?raw=true)"><img src="/assets/images/thickness_offset_default.png?raw=true)" alt="Model with 0 mm thickness offset" style="max-width: 100%;"></a></td>
+<td align="center"><a target="_blank" rel="noopener noreferrer" href="/assets/images/thickness_offset_max.png?raw=true"><img src="/assets/images/thickness_offset_max.png?raw=true" alt="Model with 7 mm thickness offset" style="max-width: 100%;"></a></td>
 </tr>
 </tbody>
 </table>
@@ -113,9 +113,9 @@ Used to adjust the thickness of the top jaw while maintaining the eye and eyebro
 </thead>
 <tbody>
 <tr>
-<td align="center">![Model with -6 mm head thickness offset](/assets/images/head_thickness_offset_min.png?raw=true)</td>
-<td align="center">![Model with 0 mm head thickness offset](/assets/images/head_thickness_offset_default.png?raw=true)</td>
-<td align="center">![Model with 5 mm head thickness offset](/assets/images/head_thickness_offset_5mm.png?raw=true)</td>
+<td align="center"><a target="_blank" rel="noopener noreferrer" href="/assets/images/head_thickness_offset_min.png?raw=true"><img src="/assets/images/head_thickness_offset_min.png?raw=true" alt="Model with -6 mm head thickness offset" style="max-width: 100%;"></a></td>
+<td align="center"><a target="_blank" rel="noopener noreferrer" href="/assets/images/head_thickness_offset_default.png?raw=true"><img src="/assets/images/head_thickness_offset_default.png?raw=true" alt="Model with 0 mm head thickness offset" style="max-width: 100%;"></a></td>
+<td align="center"><a target="_blank" rel="noopener noreferrer" href="/assets/images/head_thickness_offset_5mm.png?raw=true"><img src="/assets/images/head_thickness_offset_5mm.png?raw=true" alt="Model with 5 mm head thickness offset" style="max-width: 100%;"></a></td>
 </tr>
 </tbody>
 </table>
