@@ -6,7 +6,7 @@
 
 ![Cutaway of head earring hardware cavity](../assets/images/head_earring_hardware.png?raw=true)![Cutaway of jaw earring hardware cavity](../assets/images/jaw_earring_hardware.png?raw=true)
 
-In addition to the parameters included with the base [FlexiRex-Fusion.f3d](../FlexiRex-Fusion.f3d) and detailed in the [README](../README.md?tab=readme-ov-file#fusion-parameter-reference), the [FlexiRex-Earrings.f3d](FlexiRex-Earrings.f3d) file has additional geometry modelled to accommodate blank earrings studs and silicone bullet style fasteners. In addition to the parameters included with the base [FlexiRex-Fusion.f3d](../FlexiRex-Fusion.f3d), the FlexiRex-Earrings.f3d file includes parameters allow you to adjust the dimensions of the earring hardware geometry.
+In addition to the parameters included with the base [FlexiRex-Fusion.f3d](../FlexiRex-Fusion.f3d) and detailed in the [README](../README.md?tab=readme-ov-file#fusion-parameter-reference), the [FlexiRex-Earrings.f3d](FlexiRex-Earrings.f3d) file has additional geometry modelled to accommodate blank earrings studs and silicone bullet style fasteners. In addition to the parameters included with the base [FlexiRex-Fusion.f3d](../FlexiRex-Fusion.f3d), the FlexiRex-Earrings.f3d file includes parameters that allow you to adjust the dimensions of the earring hardware geometry.
 
 ### Parameters
 
