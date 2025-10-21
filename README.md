@@ -62,7 +62,7 @@ Used to adjust the overall thickness of the model, the minimum is set such that 
 | :--------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
 | ![Model with -2.9 mm thickness offset](/assets/images/thickness_offset_min.png?raw=true) | ![Model with 0 mm thickness offset](/assets/images/thickness_offset_default.png?raw=true) | ![Model with 7 mm thickness offset](/assets/images/thickness_offset_max.png?raw=true) |
 
-_Note: Thickness offset is applied after scaling takes place. This means model if a thickness offset is applied the model proportions with change as the scale factor changes. However, it does make it easier to attain a specific final model thickness. For example, you can apply a scaling factor of 16/13 (16 mm thickness) and a thickness offset of 4 mm to get a final model thickness of 20 mm._
+_Note: Thickness offset is applied after scaling takes place. This means that if a thickness offset is applied, the model proportions with change as the scale factor changes. However, it does make it easier to attain a specific final model thickness. For example, you can apply a scaling factor of 16/13 (16 mm thickness) and a thickness offset of 4 mm to get a final model thickness of 20 mm._
 
 #### head_size_offset
 
