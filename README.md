@@ -42,7 +42,7 @@ Adjust the scale of the joints, this is useful for increasing the strength of th
 | :-------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: |
 | ![Joints scaled by a factor of 0.8](/assets/images/joint_scale_factor_0.8.png?raw=true) | ![Joints scaled by a factor of 1.0](/assets/images/joint_scale_factor_1.0.png?raw=true) | ![Joints scaled by a factor of 1.2](/assets/images/joint_scale_factor_1.0.png?raw=true) |
 
-Note: The scaling is centred on the joint axle centre so setting this value too high will cause the cut-out for the shackle to break through and partially bisect some of the smaller segments of the model. The joint_axle_offset parameter can be used to mitigate this but even so, the maximum increase in joint scale is only ~20% (joint scale factor of 1.2)
+_Note: The scaling is centred on the joint axle centre so setting this value too high will cause the cut-out for the shackle to break through and partially bisect some of the smaller segments of the model. The joint_axle_offset parameter can be used to mitigate this but even so, the maximum increase in joint scale is only ~20% (joint scale factor of 1.2)._
 
 #### joint_axle_offset
 
@@ -52,7 +52,7 @@ As described above, offsets the axle to allow fine adjustment of the wall thickn
 | :--------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------: |
 | ![Model with no axle offset](/assets/images/joint_axle_offset_0.0_combined.png?raw=true) | ![Model with 0.5 mm applied](/assets/images/joint_axle_offset_0.5_combined.png?raw=true) |
 
-Note: It's not recommend to use negative value as this will shift the pivot point further away from the centre and reduce flexibility. In practice the maximum value will depend entirely on the scale of the model, too high a value will cause the axle to eat into and create gaps in the next segment in the chain, though this is preferable to the shackle cut-out bisect the previous segment entirely.
+_Note: It's not recommend to use negative value as this will shift the pivot point further away from the centre and reduce flexibility. In practice the maximum value will depend entirely on the scale of the model, too high a value will cause the axle to eat into and create gaps in the next segment in the chain, though this is preferable to the shackle cut-out bisect the previous segment entirely._
 
 #### thickness_offset
 
@@ -62,7 +62,7 @@ Used to adjust the overall thickness of the model, the minimum is set such that 
 | :--------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
 | ![Model with -2.9 mm thickness offset](/assets/images/thickness_offset_min.png?raw=true) | ![Model with 0 mm thickness offset](/assets/images/thickness_offset_default.png?raw=true) | ![Model with 7 mm thickness offset](/assets/images/thickness_offset_max.png?raw=true) |
 
-Note: Thickness offset is applied after scaling takes place. This means model if a thickness offset is applied the model proportions with change as the scale factor changes. However, it does make it easier to attain a specific final model thickness. For example, you can apply a scaling factor of 16/13 (16 mm thickness) and a thickness offset of 4 mm to get a final model thickness of 20 mm.
+_Note: Thickness offset is applied after scaling takes place. This means model if a thickness offset is applied the model proportions with change as the scale factor changes. However, it does make it easier to attain a specific final model thickness. For example, you can apply a scaling factor of 16/13 (16 mm thickness) and a thickness offset of 4 mm to get a final model thickness of 20 mm._
 
 #### head_size_offset
 
@@ -72,7 +72,7 @@ Used to adjust the thickness of the top jaw while maintaining the eye and eyebro
 | :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
 | ![Model with -6 mm head thickness offset](/assets/images/head_thickness_offset_min.png?raw=true) | ![Model with 0 mm head thickness offset](/assets/images/head_thickness_offset_default.png?raw=true) | ![Model with 5 mm head thickness offset](/assets/images/head_thickness_offset_5mm.png?raw=true) |
 
-Note: Head size offset is applied before scaling takes place. This means that the proportions remain consistent at any scale but if for whatever reason, you want a specific top jaw on the final model, you'll need to account for the scaling factor when setting the head size offsets.
+_Note: Head size offset is applied before scaling takes place. This means that the proportions remain consistent at any scale but if for whatever reason, you want a specific top jaw on the final model, you'll need to account for the scaling factor when setting the head size offsets._
 
 #### layer_height
 
