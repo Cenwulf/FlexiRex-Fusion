@@ -62,7 +62,7 @@ Used to adjust the overall thickness of the model, the minimum is set such that 
 | :--------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
 | ![Model with -2.9 mm thickness offset](/assets/images/thickness_offset_min.png?raw=true) | ![Model with 0 mm thickness offset](/assets/images/thickness_offset_default.png?raw=true) | ![Model with 7 mm thickness offset](/assets/images/thickness_offset_max.png?raw=true) |
 
-#### head_thickness_offset
+#### head_size_offset
 
 Used to adjust the thickness of the top jaw while maintaining the eye and eyebrow position relative to the top of the head. Min is clamped to prevent the eye and shackle cut-out from intersecting. Purely cosmetic and a bit of fun.
 
