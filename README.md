@@ -72,7 +72,7 @@ Used to adjust the thickness of the top jaw while maintaining the eye and eyebro
 | :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
 | ![Model with -6 mm head thickness offset](/assets/images/head_thickness_offset_min.png?raw=true) | ![Model with 0 mm head thickness offset](/assets/images/head_thickness_offset_default.png?raw=true) | ![Model with 5 mm head thickness offset](/assets/images/head_thickness_offset_5mm.png?raw=true) |
 
-Note: Offset is applied before scaling takes place. This means that the shape remains consistent at any scale but if for whatever reason, you want a specific thickness on the final model, you'll need to account for the scaling factor.
+Note: Head size offset is applied before scaling takes place. This means that the proportions remain consistent at any scale but if for whatever reason, you want a specific top jaw on the final model, you'll need to account for the scaling factor when setting the head size offsets.
 
 #### layer_height
 
